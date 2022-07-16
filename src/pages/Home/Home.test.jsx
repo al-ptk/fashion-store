@@ -4,17 +4,9 @@ import '@testing-library/jest-dom';
 import Home from './Home';
 
 describe('Home page', () => {
-  it('renders', () => {
+  it('renders properly', () => {
     render(<Home />);
     const main = screen.getByRole('main', { name: 'Home page' });
-    expect(main).toBeInTheDocument();
-  });
-
-  describe('HeroIntro', () => {
-    it('renders', () => {
-      render(<Home />);
-      const region = screen.getByRole('region', { name: 'Brittania' });
-      expect(region).toBeInTheDocument();
-    });
+    expect(main).toMatchSnapshot();
   });
 });

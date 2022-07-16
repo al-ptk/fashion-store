@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home page renders properly 1`] = `
+<main
+  aria-label="Home page"
+>
+  <section
+    aria-labelledby="page-header"
+  >
+    <h2
+      id="page-header"
+    >
+      Brittania
+    </h2>
+  </section>
+</main>
+`;
