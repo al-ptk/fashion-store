@@ -13,5 +13,14 @@ exports[`Home page renders properly 1`] = `
       Brittania
     </h2>
   </section>
+  <section
+    aria-labelledby="featured-header"
+  >
+    <h2
+      id="featured-header"
+    >
+      Featured:
+    </h2>
+  </section>
 </main>
 `;
