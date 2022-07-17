@@ -5,71 +5,84 @@ exports[`Home page renders properly 1`] = `
   aria-label="Home page"
 >
   <section
-    aria-labelledby="page-header"
+    aria-labelledby="page-heading"
   >
     <h1
-      id="page-header"
+      id="page-heading"
     >
       Brittania
     </h1>
   </section>
   <section
-    aria-labelledby="featured-header"
+    aria-labelledby="featured-heading"
   >
     <h2
-      id="featured-header"
+      id="featured-heading"
     >
       Featured:
     </h2>
     <a
+      data-testid="featured-link"
       href="/product/012"
     >
-      012
+      featured-012
     </a>
     <a
+      data-testid="featured-link"
       href="/product/345"
     >
-      345
+      featured-345
     </a>
     <a
+      data-testid="featured-link"
       href="/product/678"
     >
-      678
+      featured-678
     </a>
   </section>
   <section
-    aria-labelledby="catalog-header"
+    aria-labelledby="catalog-heading"
   >
     <h2
-      id="catalog-header"
+      id="catalog-heading"
     >
       Catalog:
     </h2>
     <a
+      data-testid="catalog-link"
       href="/catalog/?filter=01"
     >
-      01
+      catalog-01
     </a>
     <a
+      data-testid="catalog-link"
       href="/catalog/?filter=23"
     >
-      23
+      catalog-23
     </a>
     <a
+      data-testid="catalog-link"
       href="/catalog/?filter=45"
     >
-      45
+      catalog-45
     </a>
     <a
+      data-testid="catalog-link"
       href="/catalog/?filter=67"
     >
-      67
+      catalog-67
     </a>
     <a
+      data-testid="catalog-link"
       href="/catalog/?filter=89"
     >
-      89
+      catalog-89
     </a>
   </section>
+  <footer>
+    <section
+      aria-labelledby="footer-heading"
+    />
+  </footer>
 </main>
 `;

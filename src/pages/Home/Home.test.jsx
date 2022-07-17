@@ -15,15 +15,38 @@ describe('Home page', () => {
     expect(main).toMatchSnapshot();
   });
 
-  it('redirects to product page when Featured product clicked', () => {
+  it('redirects from Featured section to Product page', () => {
     render(
       <BrowserRouter>
         <Home />
       </BrowserRouter>
     );
-    const link = screen.getByRole('link', { name: '012' });
-    expect(link).toBeInTheDocument();
-    userEvent.click(link);
-    expect(document.location.pathname).toMatch('/product/012');
+    const links = screen.getAllByTestId('featured-link');
+    /**
+     * I don't know why the test below works. If I click a link,
+     * it makes me go to the next page. The sibling links should
+     * be gone.
+     *
+     * Console logging it checks out, though. Weird.
+     */
+    for (const link of links) {
+      userEvent.click(link);
+      expect(document.location.href).toMatch(link.href);
+    }
   });
+
+  it('redirects from Catalog Section to Catalog page', () => {
+    render(
+      <BrowserRouter>
+        <Home />
+      </BrowserRouter>
+    );
+    const links = screen.getAllByTestId('catalog-link');
+    for (const link of links) {
+      userEvent.click(link);
+      expect(document.location.href).toMatch(link.href);
+    }
+  });
+
+  
 });
