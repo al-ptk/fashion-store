@@ -10,22 +10,18 @@ const Home = () => {
       <section aria-labelledby="featured-header">
         <h2 id="featured-header">Featured:</h2>
         {['012', '345', '678'].map((elem) => (
-          <p>
-            <Link key={elem} to={`/product/:${elem}`}>
-              {elem}
-            </Link>
-          </p>
+          <Link key={elem} to={`/product/${elem}`}>
+            {elem}
+          </Link>
         ))}
       </section>
 
       <section aria-labelledby="catalog-header">
         <h2 id="catalog-header">Catalog:</h2>
         {['01', '23', '45', '67', '89'].map((elem) => (
-          <p>
-            <Link key={elem} to={`/catalog/?filter=${elem}`}>
-              {elem}
-            </Link>
-          </p>
+          <Link key={elem} to={`/catalog/?filter=${elem}`}>
+            {elem}
+          </Link>
         ))}
       </section>
     </main>

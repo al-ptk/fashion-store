@@ -7,11 +7,11 @@ exports[`Home page renders properly 1`] = `
   <section
     aria-labelledby="page-header"
   >
-    <h2
+    <h1
       id="page-header"
     >
       Brittania
-    </h2>
+    </h1>
   </section>
   <section
     aria-labelledby="featured-header"
@@ -21,6 +21,55 @@ exports[`Home page renders properly 1`] = `
     >
       Featured:
     </h2>
+    <a
+      href="/product/012"
+    >
+      012
+    </a>
+    <a
+      href="/product/345"
+    >
+      345
+    </a>
+    <a
+      href="/product/678"
+    >
+      678
+    </a>
+  </section>
+  <section
+    aria-labelledby="catalog-header"
+  >
+    <h2
+      id="catalog-header"
+    >
+      Catalog:
+    </h2>
+    <a
+      href="/catalog/?filter=01"
+    >
+      01
+    </a>
+    <a
+      href="/catalog/?filter=23"
+    >
+      23
+    </a>
+    <a
+      href="/catalog/?filter=45"
+    >
+      45
+    </a>
+    <a
+      href="/catalog/?filter=67"
+    >
+      67
+    </a>
+    <a
+      href="/catalog/?filter=89"
+    >
+      89
+    </a>
   </section>
 </main>
 `;
