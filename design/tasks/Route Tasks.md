@@ -4,9 +4,9 @@
 
 - Hero Intro
 - Featured products
-- New products
-- Products in sale
-- About Us
+- New products (skipped for now)
+- Products in sale (skipped for now)
+- About Us 
 - Custom Service
 
 ## Catalog
