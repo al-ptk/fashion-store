@@ -47,6 +47,4 @@ describe('Home page', () => {
       expect(document.location.href).toMatch(link.href);
     }
   });
-
-  
 });

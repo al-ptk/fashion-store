@@ -81,8 +81,59 @@ exports[`Home page renders properly 1`] = `
   </section>
   <footer>
     <section
-      aria-labelledby="footer-heading"
-    />
+      aria-labelledby="about-heading"
+    >
+      <h3
+        id="about-heading"
+      >
+        About Us
+      </h3>
+      <a
+        data-testid="about-link"
+        href="/"
+      >
+        blog
+      </a>
+      <a
+        data-testid="about-link"
+        href="/"
+      >
+        newsletter
+      </a>
+      <a
+        data-testid="about-link"
+        href="/"
+      >
+        Institutional
+      </a>
+    </section>
+    <section
+      aria-labelledby="service-heading"
+    >
+      <h3
+        id="service-heading"
+      >
+        Customer Service
+      </h3>
+      <a
+        data-testid="service-link"
+        href="/"
+      >
+        Our Email
+      </a>
+      <a
+        data-testid="service-link"
+        href="/"
+      >
+        Phone Number
+      </a>
+      <a
+        data-testid="service-link"
+        href="/"
+      >
+        Whatsapp
+      </a>
+    </section>
   </footer>
 </main>
 `;
