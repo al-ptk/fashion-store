@@ -4,6 +4,7 @@ import { Normalize } from 'styled-normalize';
 import { ThemeProvider } from 'styled-components';
 import theme from './utils/styled/theme';
 import GlobalStyle from './utils/styled/GlobalStyle';
+import Home from './pages/Home';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
         <Normalize />
         <GlobalStyle />
         <Routes>
-          <Route path="/" />
+          <Route path="/" element={<Home />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
