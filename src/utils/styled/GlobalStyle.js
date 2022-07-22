@@ -28,6 +28,11 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 400;
     src: url("${oleoSwash}");
   }
+
+  * {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
 `;
 
 export default GlobalStyle;
