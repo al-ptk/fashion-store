@@ -1,5 +1,16 @@
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Normalize } from 'styled-normalize';
+
 function App() {
-  return <h1>I'm alive</h1>;
+  return (
+    <BrowserRouter>
+      <Normalize />
+      <Routes>
+        <Route path='/' element={<div>hey there</div>}/>
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;
