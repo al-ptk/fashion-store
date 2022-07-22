@@ -6,8 +6,8 @@
 - Featured products
 - New products (skipped for now)
 - Products in sale (skipped for now)
-- About Us 
-- Custom Service
+- About Us (skipped for now)
+- Contact
 
 ## Catalog
 
