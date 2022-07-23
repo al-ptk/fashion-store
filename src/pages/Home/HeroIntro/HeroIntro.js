@@ -1,11 +1,10 @@
-import { HeroContainer } from './HeroIntro.styled';
-import bg from '../../../assets/images/HeroIntroBG.webp';
+import { HeroContainer, HeroTitle, HeroSubtitle } from './HeroIntro.styled';
 
 function HeroIntro() {
   return (
     <HeroContainer>
-      <h1>Brittania</h1>
-      <p>Fashion on a different level</p>
+      <HeroTitle>Brittania</HeroTitle>
+      <HeroSubtitle>Fashion on a different level</HeroSubtitle>
     </HeroContainer>
   );
 }

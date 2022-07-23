@@ -20,6 +20,11 @@ I will abide by the workflow of:
 
 Here is the [kanban](https://sharing.clickup.com/31171183/b/h/7-31171183-2/ae2c4f2a10958cd) where I put all my tasks, with user stories and acceptance criteria.
 
+## Lessons Learned
+
+- [How to setup a directory structure](https://dev.to/alptk/folder-structure-of-a-react-project-2k6c)
+- [styled-components concepts: Interpolation, GlobalStyle, ThemeProvider](tbd)
+
 ## Local setup
 
 To install:

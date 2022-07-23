@@ -1,11 +1,9 @@
 import HeroIntro from './HeroIntro';
 
-function Home() {
+export function Home() {
   return (
     <main>
       <HeroIntro />
     </main>
   );
 }
-
-export { Home };
