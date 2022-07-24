@@ -1,7 +1,11 @@
 import React from 'react';
-import { FeaturedContainer } from './Featured.styled';
-import { getFeatured } from '../../../assets/data/mockProducts';
+import { FeaturedContainer, FeaturedTitle } from './Featured.styled';
 
-export function Featured() {
-  return <FeaturedContainer></FeaturedContainer>;
+export function Featured({ productList }) {
+  return (
+    <>
+      <FeaturedTitle>Featured:</FeaturedTitle>
+      <FeaturedContainer></FeaturedContainer>
+    </>
+  );
 }
