@@ -45,12 +45,27 @@ const catalog = [
     },
     colors: ['yellow', 'blue', 'red'],
   },
+  {
+    id: 4,
+    title: {
+      en: 'Some Other Product',
+      pt: 'Conjundo Colorido',
+    },
+    imageURL: colorCombo,
+    price: '$89,99',
+    sizes: {
+      en: ['S', 'M'],
+      pt: ['P', 'M'],
+    },
+    colors: ['yellow', 'blue', 'red'],
+  },
 ];
 
 export function getFeatured() {
   const featuredIDs = [1, 2, 3];
   return JSON.stringify(
-    // Discard all products that are NOT at Featured
-    catalog.filter((product) => !featuredIDs.includes(product.id))
+    // Keep only the products whose id is featured.
+    // This may change to tag or something. Idk yet.
+    catalog.filter((product) => featuredIDs.includes(product.id))
   );
 }
