@@ -8,7 +8,8 @@ export const HeroContainer = styled.section`
       rgba(0, 0, 0, 1) 100%
     ),
     url(${bg});
-  background-size: 360px 480px;
+  background-size: 410px 570px;
+  background-position: center;
 
   width: 360px;
   height: 480px;
@@ -22,12 +23,12 @@ export const HeroContainer = styled.section`
 export const HeroTitle = styled.h1`
   font-size: 48px;
   color: white;
-  font-family: 'Oleo Script Swash Caps';
+  font-family: ${(props) => props.theme.fonts.headline};
   margin: 0;
 `;
 
 export const HeroSubtitle = styled.p`
   font-size: 20px;
   color: white;
-  font-family: Questrial;
+  font-family: ${(props) => props.theme.fonts.details};
 `;
