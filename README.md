@@ -17,13 +17,15 @@ I will abide by the workflow of:
 - Write tests before writing code
 - Do atomic commits while coding
 - Use rebase for merging to main (I have no clue how this will go — aren't adventures fun?)
+  - (Details from the future: I just do pull requests and squash merges!)
 
 Here is the [kanban](https://sharing.clickup.com/31171183/b/h/7-31171183-2/ae2c4f2a10958cd) where I put all my tasks, with user stories and acceptance criteria.
 
 ## Lessons Learned
 
-- [How to setup a directory structure](https://dev.to/alptk/folder-structure-of-a-react-project-2k6c)
-- [styled-components concepts: Interpolation, GlobalStyle, ThemeProvider](tbd)
+- [How to setup an interesting directory structure](https://dev.to/alptk/folder-structure-of-a-react-project-2k6c)
+- [styled-components concepts: Interpolation, GlobalStyle, ThemeProvider](#)
+- Some git\github workflow practice, with pull requests, review of code and merges. I'm not 100% good at it, but I am getting there!
 
 ## Local setup
 
