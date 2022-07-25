@@ -26,6 +26,7 @@ Here is the [kanban](https://sharing.clickup.com/31171183/b/h/7-31171183-2/ae2c4
 - [How to setup an interesting directory structure](https://dev.to/alptk/folder-structure-of-a-react-project-2k6c)
 - [styled-components concepts: Interpolation, GlobalStyle, ThemeProvider](#)
 - Some git\github workflow practice, with pull requests, review of code and merges. I'm not 100% good at it, but I am getting there!
+- I don't really like how I structured the multi-lingual system. I must try something different in the next project!
 
 ## Local setup
 
