@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import {
   FeaturedContainer,
   FeaturedTitle,
@@ -22,10 +21,8 @@ export function Featured({ productList }) {
 const FeaturedCard = (props) => {
   const { imageURL, title, id } = props;
   return (
-    <Link to={`/products/${id}`}>
-      <StyledCard image={imageURL}>
-        <h3>{title.en}</h3>
-      </StyledCard>
-    </Link>
+    <StyledCard to={`/products/${id}`} image={imageURL}>
+      <h3 style={{ width: 'auto', height: '1em' }}>{title.en}</h3>
+    </StyledCard>
   );
 };
