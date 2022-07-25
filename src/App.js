@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import { Normalize } from 'styled-normalize';
 import { ThemeProvider } from 'styled-components';
 import theme from './utils/styled/theme';
@@ -14,6 +14,14 @@ function App() {
         <GlobalStyle />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route
+            path="*"
+            element={
+              <div>
+                Oops... <Link to="/">go back home</Link>
+              </div>
+            }
+          />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
