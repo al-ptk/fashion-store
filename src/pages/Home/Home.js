@@ -2,6 +2,7 @@ import Featured from './Featured';
 import HeroIntro from './HeroIntro';
 import { getFeatured } from '../../assets/data/mockProducts';
 import { useEffect, useState } from 'react';
+import Categories from './Categories';
 
 export function Home() {
   const [featured, setFeatured] = useState([]);
@@ -14,6 +15,7 @@ export function Home() {
     <main>
       <HeroIntro />
       <Featured productList={featured} />
+      <Categories />
     </main>
   );
 }
