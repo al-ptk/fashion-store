@@ -16,15 +16,13 @@ const Mock404 = () => (
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <BrowserRouter>
-        <Normalize />
-        <GlobalStyle />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/catalog" element={<Catalog />} />
-          <Route path="*" element={<Mock404 />} />
-        </Routes>
-      </BrowserRouter>
+      <Normalize />
+      <GlobalStyle />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/catalog" element={<Catalog />} />
+        <Route path="*" element={<Mock404 />} />
+      </Routes>
     </ThemeProvider>
   );
 }
