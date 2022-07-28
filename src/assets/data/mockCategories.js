@@ -1,8 +1,12 @@
-export const mockCategories = [
-  ['catgory1', '?filter=category1'],
-  ['catgory2', '?filter=category2'],
-  ['catgory3', '?filter=category3'],
-  ['catgory4', '?filter=category4'],
-  ['catgory5', '?filter=category5'],
-  ['catgory6', '?filter=category6'],
+const mockCategories = [
+  { title: 'catgory1', path: 'catalog/?filter=category1' },
+  { title: 'catgory2', path: 'catalog/?filter=category2' },
+  { title: 'catgory3', path: 'catalog/?filter=category3' },
+  { title: 'catgory4', path: 'catalog/?filter=category4' },
+  { title: 'catgory5', path: 'catalog/?filter=category5' },
+  { title: 'catgory6', path: 'catalog/?filter=category6' },
 ];
+
+export function getCategories() {
+  return mockCategories;
+}

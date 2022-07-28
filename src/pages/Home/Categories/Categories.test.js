@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom';
 import { screen, render } from '@testing-library/react';
 import App from '../../../App';
-import Categories from './index';
+import { getCategories } from '../../../assets/data/mockCategories';
 
 describe('Categories', () => {
   it('renders', () => {
@@ -11,16 +11,10 @@ describe('Categories', () => {
     ).toBeInTheDocument();
   });
 
-  it.each([
-    ['catgory1', '?filter=category1'],
-    ['catgory2', '?filter=category2'],
-    ['catgory3', '?filter=category3'],
-    ['catgory4', '?filter=category4'],
-    ['catgory5', '?filter=category5'],
-    ['catgory6', '?filter=category6'],
-    ['catalog', '?filter='],
-  ])('%s points to the right page', (linkTitle, linkPath) => {
+  it.each(getCategories())('$title points to the right page', (linkProps) => {
     render(<App />);
-    expect(screen.getByRole('link', { name: linkTitle })).toBeInTheDocument();
+    expect(
+      screen.getByRole('link', { name: linkProps.title })
+    ).toBeInTheDocument();
   });
 });
