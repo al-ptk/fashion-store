@@ -1,5 +1,5 @@
 import React from 'react';
-import Heading2 from '../../../components/HomeSubHeading.styled';
+import Heading2 from '../../../components/Heading2';
 import { StyledCategory } from './Categories.styled';
 
 function Categories({ categoriesList }) {
