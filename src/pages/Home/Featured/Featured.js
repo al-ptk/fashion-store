@@ -10,8 +10,8 @@ export function Featured({ productList }) {
     <>
       <FeaturedTitle>Featured:</FeaturedTitle>
       <FeaturedContainer>
-        {productList.map((elem) => (
-          <FeaturedCard key={elem.id} {...elem} />
+        {productList.map((productProps) => (
+          <FeaturedCard key={productProps.id} {...productProps} />
         ))}
       </FeaturedContainer>
     </>
