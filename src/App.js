@@ -5,6 +5,13 @@ import { ThemeProvider } from 'styled-components';
 import theme from './utils/styled/theme';
 import GlobalStyle from './utils/styled/GlobalStyle';
 import Home from './pages/Home';
+import Catalog from './pages/Catalog/Catalog';
+
+const Mock404 = () => (
+  <div>
+    Oops... <Link to="/">go back home</Link>
+  </div>
+);
 
 function App() {
   return (
@@ -14,14 +21,8 @@ function App() {
         <GlobalStyle />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route
-            path="*"
-            element={
-              <div>
-                Oops... <Link to="/">go back home</Link>
-              </div>
-            }
-          />
+          <Route path="/catalog" element={<Catalog />} />
+          <Route path="*" element={<Mock404 />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
