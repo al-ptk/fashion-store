@@ -1,14 +1,11 @@
 import React from 'react';
-import {
-  FeaturedContainer,
-  FeaturedTitle,
-  StyledCard,
-} from './Featured.styled';
+import Heading2 from '../../../components/HomeSubHeading.styled';
+import { FeaturedContainer, StyledCard } from './Featured.styled';
 
 export function Featured({ productList }) {
   return (
     <>
-      <FeaturedTitle>Featured:</FeaturedTitle>
+      <Heading2>Featured:</Heading2>
       <FeaturedContainer>
         {productList.map((productProps) => (
           <FeaturedCard key={productProps.id} {...productProps} />

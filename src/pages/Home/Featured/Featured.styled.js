@@ -9,11 +9,6 @@ export const FeaturedContainer = styled.section`
   overflow-x: scroll;
 `;
 
-export const FeaturedTitle = styled.h2`
-  font-family: ${(props) => props.theme.fonts.subheadline};
-  font-weight: 300;
-`;
-
 export const StyledCard = styled(Link)`
   flex-shrink: 0;
   width: 300px;
